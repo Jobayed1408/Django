@@ -1,0 +1,16 @@
+{% load first_tags %}
+  
+<div class="row row-cols-md-3 g-4">
+  {% for card in cards %}
+    <div class="col">
+      <div class="card ">
+        <img src={{card.strMealThumb}} class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">{{card.strMeal}}</h5>
+          <p style="margin-top: 10px, font-size: 5px;" >This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  {% endfor%}
+</div>
+   
